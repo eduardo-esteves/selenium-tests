@@ -1,10 +1,8 @@
 import time
 
-import pytest
 from selenium.webdriver.common.by import By
 
 
-@pytest.mark.usefixtures("setup_teardown")
 class TestCT01:
     def test_ct01_test_valid_login(self, setup_teardown):
         browser = setup_teardown
